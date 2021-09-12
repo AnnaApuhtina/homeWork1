@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homeWork1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt7-vI-dFh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-xd-cA4">
+                                        <rect key="frame" x="178.5" y="100" width="57" height="62.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="44"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7X-5N-t9Q">
+                                        <rect key="frame" x="176.5" y="202.5" width="61" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-pz-vsC">
+                                        <rect key="frame" x="170.5" y="286" width="73" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VUe-08-EBQ">
+                                        <rect key="frame" x="16" y="236" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OGb-tt-PiH">
+                                        <rect key="frame" x="16" y="319.5" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbi-MQ-X33">
+                                        <rect key="frame" x="176.5" y="393.5" width="61" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBattonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iC6-vV-nFg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34901960780000002" green="0.49019607840000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BJl-pz-vsC" firstAttribute="centerX" secondItem="pt7-vI-dFh" secondAttribute="centerX" id="5wM-n7-qNw"/>
+                                    <constraint firstItem="Gbi-MQ-X33" firstAttribute="top" secondItem="OGb-tt-PiH" secondAttribute="bottom" constant="40" id="9jz-YF-k5r"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gbi-MQ-X33" secondAttribute="bottom" constant="50" id="CVA-0c-uNU"/>
+                                    <constraint firstItem="OGb-tt-PiH" firstAttribute="top" secondItem="BJl-pz-vsC" secondAttribute="bottom" constant="8" id="DWH-pO-h2w"/>
+                                    <constraint firstAttribute="trailing" secondItem="OGb-tt-PiH" secondAttribute="trailing" constant="16" id="FlO-aA-auH"/>
+                                    <constraint firstItem="Z7X-5N-t9Q" firstAttribute="top" secondItem="lQY-xd-cA4" secondAttribute="bottom" constant="40" id="LP9-eu-yQf"/>
+                                    <constraint firstItem="BJl-pz-vsC" firstAttribute="top" secondItem="VUe-08-EBQ" secondAttribute="bottom" constant="16" id="QRo-Cl-c8p"/>
+                                    <constraint firstAttribute="trailing" secondItem="VUe-08-EBQ" secondAttribute="trailing" constant="16" id="ZKP-00-yor"/>
+                                    <constraint firstItem="VUe-08-EBQ" firstAttribute="centerX" secondItem="pt7-vI-dFh" secondAttribute="centerX" id="ZnP-Xo-ron"/>
+                                    <constraint firstItem="Z7X-5N-t9Q" firstAttribute="centerX" secondItem="pt7-vI-dFh" secondAttribute="centerX" id="coV-YD-gPh"/>
+                                    <constraint firstItem="Gbi-MQ-X33" firstAttribute="centerX" secondItem="pt7-vI-dFh" secondAttribute="centerX" id="e9j-QC-rFT"/>
+                                    <constraint firstItem="OGb-tt-PiH" firstAttribute="centerX" secondItem="pt7-vI-dFh" secondAttribute="centerX" id="g4s-0t-ugl"/>
+                                    <constraint firstItem="lQY-xd-cA4" firstAttribute="top" secondItem="pt7-vI-dFh" secondAttribute="top" constant="100" id="ikl-ZT-hf7"/>
+                                    <constraint firstItem="VUe-08-EBQ" firstAttribute="leading" secondItem="pt7-vI-dFh" secondAttribute="leading" constant="16" id="jf5-Sb-Zpf"/>
+                                    <constraint firstItem="OGb-tt-PiH" firstAttribute="leading" secondItem="pt7-vI-dFh" secondAttribute="leading" constant="16" id="jyv-Z4-wFX"/>
+                                    <constraint firstItem="lQY-xd-cA4" firstAttribute="centerX" secondItem="pt7-vI-dFh" secondAttribute="centerX" id="rjG-4H-WZH"/>
+                                    <constraint firstItem="VUe-08-EBQ" firstAttribute="top" secondItem="Z7X-5N-t9Q" secondAttribute="bottom" constant="8" id="xj9-mZ-4cN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pt7-vI-dFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="54V-GL-uuU"/>
+                            <constraint firstItem="pt7-vI-dFh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DXL-44-Ty6"/>
+                            <constraint firstItem="pt7-vI-dFh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PB2-Dl-RPd"/>
+                            <constraint firstAttribute="bottom" secondItem="pt7-vI-dFh" secondAttribute="bottom" id="d2x-a8-B7K"/>
+                            <constraint firstItem="pt7-vI-dFh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lkA-pC-Fn1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="VUe-08-EBQ" id="Yzx-N2-zSK"/>
+                        <outlet property="passwordTextField" destination="OGb-tt-PiH" id="ECa-7B-ba4"/>
+                        <outlet property="scrollView" destination="pt7-vI-dFh" id="gdp-0Q-e0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
